@@ -1,0 +1,23 @@
+extends templates/layout
+
+block title
+    title Block Responsive.sk
+
+block content
+    content
+
+    body
+    div.lemon-wrap
+      //Header
+      include ./components/global/navigation.pug
+      //Homepage Components
+      main 
+        include ./components/banners/banner-three-images.pug
+        include ./components/product-sections/tranding-products.pug
+        include ./components/perks-and-returns/perks-returns.pug
+        include ./components/banners/promo-section-banner.pug
+        include ./components/banners/promo-section-instock.pug
+
+      //Footer
+      bg-white.hero-section
+        include ./components/global/footer.pug
